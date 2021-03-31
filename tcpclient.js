@@ -5,7 +5,7 @@ console.log('Connected to Server !!!')
 client.write('Sarvajanik');
 
 client.on('data', function(data) {
-    console.log(data.toString());
+    console.log(data.toNumber());
     client.end();
 });
 
